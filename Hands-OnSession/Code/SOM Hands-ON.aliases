@@ -1,5 +1,5 @@
 [My Computer]
-My Computer = "192.168.130.1"
+My Computer = "10.1.128.223"
 
 [RT Single-Board RIO Target]
 RT Single-Board RIO Target = "10.1.128.111"
