@@ -19,7 +19,20 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Dependencies" Type="Dependencies"/>
+		<Item Name="SPI API - SPI Simulation.vi" Type="VI" URL="../Simulation/SPI API - SPI Simulation.vi"/>
+		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="user.lib" Type="Folder">
+				<Item Name="NI SPI IP FPGA.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NI SPI IP/FPGA/Controllers/NI SPI IP FPGA.lvlib"/>
+			</Item>
+			<Item Name="Calculate Timing Characteristics.vi" Type="VI" URL="../Simulation/SubVIs/Calculate Timing Characteristics.vi"/>
+			<Item Name="Detect Edge.vi" Type="VI" URL="../Simulation/SubVIs/Detect Edge.vi"/>
+			<Item Name="Digital Data.ctl" Type="VI" URL="../Simulation/Controls/Digital Data.ctl"/>
+			<Item Name="DigitalChartPlotter.vi" Type="VI" URL="../Simulation/SubVIs/DigitalChartPlotter.vi"/>
+			<Item Name="Latch with Reset.vi" Type="VI" URL="../Simulation/SubVIs/Latch with Reset.vi"/>
+			<Item Name="Pulse Counter.vi" Type="VI" URL="../Simulation/SubVIs/Pulse Counter.vi"/>
+			<Item Name="SPI Simulation Plotter.vi" Type="VI" URL="../Simulation/SubVIs/SPI Simulation Plotter.vi"/>
+			<Item Name="Timing Characteristics.ctl" Type="VI" URL="../Simulation/Controls/Timing Characteristics.ctl"/>
+		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 	<Item Name="RT Single-Board RIO Target" Type="RT Single-Board RIO">
@@ -8268,7 +8281,6 @@ sbRIO-9651/Clk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSSBRIO_
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
-		<Item Name="SPI API - SPI Simulation.vi" Type="VI" URL="../Simulation/SPI API - SPI Simulation.vi"/>
 		<Item Name="Chassis" Type="sbRIO Chassis">
 			<Property Name="crio.ProgrammingMode" Type="Str">fpga</Property>
 			<Property Name="crio.ResourceID" Type="Str">RIO0</Property>
@@ -8449,22 +8461,13 @@ sbRIO-9651/Clk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSSBRIO_
 						<Item Name="SPI Engine. Send SPI Device Response Data.vi" Type="VI" URL="/&lt;vilib&gt;/SPI API/SPIAPI/SPI Engine/SPI Engine. Send SPI Device Response Data.vi"/>
 						<Item Name="SPI Engine. Send SPI Device Response Data. Enqueue into FIFO.vi" Type="VI" URL="/&lt;vilib&gt;/SPI API/SPIAPI/SPI Engine/subVI/SPI Engine. Send SPI Device Response Data. Enqueue into FIFO.vi"/>
 						<Item Name="Write SPI Digital Lines.vi" Type="VI" URL="/&lt;vilib&gt;/SPI API/SPIAPI/DIO/Write SPI Digital Lines.vi"/>
+						<Item Name="Acquisition Timer.vi" Type="VI" URL="/&lt;vilib&gt;/SPI API/SPIAPI/Acquisition Timer.vi"/>
 					</Item>
 				</Item>
 				<Item Name="Build Specifications" Type="Build"/>
 			</Item>
 		</Item>
-		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="user.lib" Type="Folder">
-				<Item Name="NI SPI IP FPGA.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NI SPI IP/FPGA/Controllers/NI SPI IP FPGA.lvlib"/>
-			</Item>
-			<Item Name="Timing Characteristics.ctl" Type="VI" URL="../Simulation/Controls/Timing Characteristics.ctl"/>
-			<Item Name="Digital Data.ctl" Type="VI" URL="../Simulation/Controls/Digital Data.ctl"/>
-			<Item Name="SPI Simulation Plotter.vi" Type="VI" URL="../Simulation/SubVIs/SPI Simulation Plotter.vi"/>
-			<Item Name="DigitalChartPlotter.vi" Type="VI" URL="../Simulation/SubVIs/DigitalChartPlotter.vi"/>
-			<Item Name="Calculate Timing Characteristics.vi" Type="VI" URL="../Simulation/SubVIs/Calculate Timing Characteristics.vi"/>
-			<Item Name="Detect Edge.vi" Type="VI" URL="../Simulation/SubVIs/Detect Edge.vi"/>
-		</Item>
+		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 </Project>
