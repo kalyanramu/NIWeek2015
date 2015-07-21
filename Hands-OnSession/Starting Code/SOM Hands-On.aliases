@@ -4,9 +4,9 @@ My Computer = "192.168.130.1"
 [RT Single-Board RIO Target]
 RT Single-Board RIO Target = "10.1.128.111"
 
-[RT Single-Board RIO Target 2]
-RT Single-Board RIO Target 2 = "0.0.0.0"
-
 [RT Single-Board RIO Target 3]
 RT Single-Board RIO Target 3 = "0.0.0.0"
+
+[Simulation Target]
+Simulation Target = "0.0.0.0"
 
