@@ -7,3 +7,6 @@ RT Single-Board RIO Target = "10.1.128.111"
 [RT Single-Board RIO Target 2]
 RT Single-Board RIO Target 2 = "0.0.0.0"
 
+[Simulation Target]
+Simulation Target = "0.0.0.0"
+
