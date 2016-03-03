@@ -2,7 +2,7 @@
 My Computer = "10.211.55.3"
 
 [RT Single-Board RIO Target]
-RT Single-Board RIO Target = "10.1.128.111"
+RT Single-Board RIO Target = "172.22.11.2"
 
 [RT Single-Board RIO Target 2]
 RT Single-Board RIO Target 2 = "0.0.0.0"
